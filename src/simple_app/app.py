@@ -8,7 +8,6 @@ from flask_migrate import Migrate
 from simple_app.api import todo_api
 from simple_app.db import db
 
-
 load_dotenv()
 
 app = Flask(__name__)
@@ -24,7 +23,7 @@ migrate = Migrate(app, db)
 
 @app.route("/")
 def index():
-    return "hello world222"
+    return "hello world555"
 
 
 app.add_url_rule("/todo", methods=["GET"], view_func=todo_api.list_todo)
