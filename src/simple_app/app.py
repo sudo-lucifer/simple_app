@@ -8,6 +8,7 @@ from flask_migrate import Migrate
 from simple_app.api import todo_api
 from simple_app.db import db
 
+
 load_dotenv()
 
 app = Flask(__name__)
